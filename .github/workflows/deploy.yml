@@ -1,0 +1,32 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+
+  # Zip up the data packs and upload to the game server
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+
+      # Check out the repo
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      # Run the build, compressing all data packs
+      - run: bash ./scripts/build.sh
+
+      # Upload to the game server
+      - uses: wangyucode/sftp-upload-action@v2.0.2
+        with:
+          host: ${{ secrets.SFTP_HOST }}
+          port: ${{ secrets.SFTP_PORT }}
+          username: ${{ secrets.SFTP_USER }}
+          password: ${{ secrets.SFTP_PASSWORD }}
+          localDir: ./build
+          remoteDir: /world/datapacks
+          forceUpload: true
+          removeExtraFilesOnServer: true
