@@ -4,8 +4,8 @@
 		"icon": {
 			"item": "minecraft:compass"
 		},
-		"title": "First Worship",
-		"description": "Visit the World Altar where sacrifices are made.",
+		"title": "First Communion",
+		"description": "Make a pilgrimage to the World Altar, where sacrifices are made.",
 		"announce_to_chat": true
 	},
 	"criteria": {
