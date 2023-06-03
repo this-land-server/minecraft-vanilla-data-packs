@@ -1,0 +1,19 @@
+{
+	"parent": "world-altar:root",
+	"display": {
+		"icon": {
+			"item": "minecraft:compass"
+		},
+		"title": "First Worship",
+		"description": "Visit the World Altar where sacrifices are made.",
+		"announce_to_chat": true
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"rewards": {
+		"experience": 50
+	}
+}
