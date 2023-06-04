@@ -6,6 +6,9 @@ execute if block ~ ~2 ~ minecraft:gold_block run function world-altar:sacrifice/
 execute if block ~ ~2 ~ minecraft:diamond_block run function world-altar:sacrifice/diamond
 execute if block ~ ~2 ~ minecraft:netherite_block run function world-altar:sacrifice/netherite
 
+# Handle special block sacrifices
+execute if block ~ ~2 ~ minecraft:lapis_block run function world-altar:sacrifice/lapis
+
 # Show particle effects
 execute if entity @a[distance=..5] run particle dust 0.33 1 1 1 ~ ~2 ~ 0.3 1 0.3 0.2 10
 
