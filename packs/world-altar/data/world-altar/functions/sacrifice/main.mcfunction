@@ -1,5 +1,6 @@
 # Handle block sacrifices
 execute if block ~ ~2 ~ minecraft:iron_block run function world-altar:sacrifice/iron
+execute if block ~ ~2 ~ minecraft:copper_block run function world-altar:sacrifice/copper
 execute if block ~ ~2 ~ minecraft:emerald_block run function world-altar:sacrifice/emerald
 execute if block ~ ~2 ~ minecraft:gold_block run function world-altar:sacrifice/gold
 execute if block ~ ~2 ~ minecraft:diamond_block run function world-altar:sacrifice/diamond
