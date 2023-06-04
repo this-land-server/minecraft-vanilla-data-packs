@@ -1,7 +1,7 @@
 
 # This Land: Minecraft Vanilla Data Packs
 
-These are the data packs used on This Land's Vanilla server. Data packs should be added uncompressed in the `packs` folder.
+These are the data packs used on This Land's Vanilla server. Data packs should be added uncompressed in the `packs` folder. Pack folders **must** not contain any spaces.
 
 ## Deployment
 
