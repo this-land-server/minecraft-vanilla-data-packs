@@ -32,11 +32,23 @@
               ],
               "conditions": [
                 {
-                  "condition": "entity_properties",
-                  "predicate": {
-                    "nbt": "{CustomName:\"{\\\"text\\\":\\\"Toast\\\"}\"}"
-                  },
-                  "entity": "this"
+                  "condition": "any_of",
+                  "terms": [
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{CustomName:\"{\\\"text\\\":\\\"Toast\\\"}\"}"
+                      },
+                      "entity": "this"
+                    },
+                    {
+                      "condition": "entity_properties",
+                      "predicate": {
+                        "nbt": "{CustomName:\"\\\"Toast\\\"\"}"
+                      },
+                      "entity": "this"
+                    }
+                  ]
                 },
                 {
                   "condition": "random_chance_with_looting",
