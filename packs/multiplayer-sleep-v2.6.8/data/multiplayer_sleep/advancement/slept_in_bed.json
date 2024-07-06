@@ -1,14 +1,4 @@
 {
-	"display": {
-		"icon": {
-			"item": "minecraft:air"
-		},
-		"title": "",
-		"description": "",
-		"show_toast": false,
-		"announce_to_chat": false,
-		"hidden": true
-	},
 	"criteria": {
 		"slept_in_bed": {
 			"trigger": "minecraft:slept_in_bed",
